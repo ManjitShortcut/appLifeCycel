@@ -24,8 +24,12 @@ initSatate(){
  dispose(){
  WidgetsBinding.instance.removeObserver(this);
  }
-
-
+// Appilcation didchnage lifecycel is method. where we can detect the application lifecycle state.
+   @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    print(state);
+  }
 
 
 
